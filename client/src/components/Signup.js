@@ -4,7 +4,7 @@ const Signup = () => {
     return (
         <div>
               <p>WELCOME</p>
-            <h1>WE ARETHE MERN DEVELOPER</h1>
+            <h1>WE ARETHE SIGNUP DEVELOPER</h1>
         </div>
     )
 }
