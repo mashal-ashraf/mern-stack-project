@@ -1,40 +1,39 @@
 import React from 'react'
-import { Route } from 'react-router-dom';
+import {Route}  from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Login from "./components/Login";
-import Signup from "./components/Signup";
+import Signup from "./components/Signup"
 
 const App = () => {
   return (
-    <>
+    <> 
       <Navbar/>
-      <Route>
-        <Home />
+
+      <Route exact path="/">
+        <Home/>
       </Route>
 
-      <Route>
-        <About />
+      <Route path="/about">
+        <About/>
       </Route>
 
-      <Route>
-        <Contact />
+      <Route path="/contact">
+        <Contact/>
       </Route>
 
-      <Route>
+      <Route path="/login">
         <Login />
       </Route>
 
-      <Route>
+      <Route path="/signup">
         <Signup />
       </Route>
       
       </>
-        
-     
-  
+
   )
 }
 
